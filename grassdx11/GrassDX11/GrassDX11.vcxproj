@@ -156,7 +156,7 @@
       <TargetMachine>MachineX86</TargetMachine>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
       <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
-      <AdditionalLibraryDirectories>..\DirectXTex\Bin\Desktop_2019_Win10\Win32\Debug;..\DXUT\Optional\Bin\Desktop_2017_Win10\Win32\Debug;..\DirectXTK\Bin\Desktop_2019_Win10\Win32\Debug;..\Effects11\Bin\Desktop_2019_Win10\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\Program Files\Assimp\lib\x64;..\DirectXTex\Bin\Desktop_2019_Win10\Win32\Debug;..\DXUT\Optional\Bin\Desktop_2017_Win10\Win32\Debug;..\DirectXTK\Bin\Desktop_2019_Win10\Win32\Debug;..\Effects11\Bin\Desktop_2019_Win10\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <Manifest>
       <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>

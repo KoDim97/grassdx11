@@ -17,8 +17,11 @@ bool ModelLoader::Load(HWND hwnd, ID3D11Device * dev, ID3D11DeviceContext * devc
 		aiProcess_Triangulate |
 		aiProcess_ConvertToLeftHanded);
 
-	if (pScene == NULL)
+	if (pScene == NULL) {
+
+		auto wtf = importer.GetErrorString();
 		return false;
+	}
 
 	this->directory = filename.substr(0, filename.find_last_of('/'));
 
@@ -134,7 +137,7 @@ vector<Texture> ModelLoader::loadMaterialTextures(aiMaterial * mat, aiTextureTyp
 			else
 			{
 				string filename = string(str.C_Str());
-				filename = directory + '/' + filename;
+				//filename = directory + '/' + filename;
 				wstring filenamews = wstring(filename.begin(), filename.end());
 				hr = CreateWICTextureFromFile(dev, devcon, filenamews.c_str(), nullptr, &texture.texture);
             if (FAILED(hr))

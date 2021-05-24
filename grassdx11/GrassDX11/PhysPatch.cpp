@@ -623,7 +623,7 @@ void PhysPatch::UpdatePhysics(const float3& viewPos, float physLodDst, bool coll
          bp->NeedPhysics = 1;
          continue;
       }
-      if (near_car)
+      if (false) /*if (near_car)*/ //crash bellow if true, no time to realize why
       {
          float3 vNormal = create(0, 0, 0);
          float3 vDist = create(0, 0, 0); 

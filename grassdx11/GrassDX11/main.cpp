@@ -1023,7 +1023,7 @@ void CALLBACK OnKeyboard( UINT nChar, bool bKeyDown, bool bAltDown, void* pUserC
       case VK_BACK:
          isDbgUiRendered = !isDbgUiRendered;
          break;
-      case VK_NUMPAD7:
+      case VK_SUBTRACT:
          ToggleToNormalCamera();
          copterController.UnfixCam();
          break;

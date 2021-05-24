@@ -255,7 +255,8 @@ void MeshCamera::FrameMove(FLOAT fElapsedTime)
    XMVECTOR mesh_pos, mesh_dir;
    float mesh_radius;//, len;
    
-   mesh_pos_and_radius = XMLoadFloat4(&m_pMesh->GetPosAndRadius());
+   auto pos = m_pMesh->GetPosAndRadius();
+   mesh_pos_and_radius = XMLoadFloat4(&pos);
    mesh_pos = mesh_pos_and_radius;
    mesh_radius = getw(mesh_pos_and_radius);
 

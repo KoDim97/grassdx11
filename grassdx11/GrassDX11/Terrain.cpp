@@ -200,15 +200,14 @@ Terrain::Terrain(ID3D11Device* a_pD3DDevice, ID3D11DeviceContext* a_pD3DDeviceCt
    m_pLightMapESRV = a_pEffect->GetVariableByName("g_txLightMap")->AsShaderResource();
 
    ID3DX11EffectShaderResourceVariable* pESRV;
+   ID3D11ShaderResourceView* pSRV;
    pESRV = a_pEffect->GetVariableByName("g_txGrassDiffuse")->AsShaderResource();
+   HRESULT hr = CreateDDSTextureFromFile(m_pD3DDevice, L"resources/Grass.dds", nullptr, &pSRV);
+   pESRV->SetResource(pSRV);
 
    ID3D11ShaderResourceView* pSRV;
    
    HRESULT hr = CreateDDSTextureFromFile(m_pD3DDevice, L"resources/Grass.dds", nullptr, &pSRV);
-   pESRV->SetResource(pSRV);
-
-   pESRV = a_pEffect->GetVariableByName("g_txTerrDiffuse")->AsShaderResource();
-   hr = CreateDDSTextureFromFile(m_pD3DDevice, L"resources/Terrain/Terrain_diffuse.dds", nullptr, &pSRV);
    pESRV->SetResource(pSRV);
 
    pESRV = a_pEffect->GetVariableByName("g_txTerrHeight")->AsShaderResource();
