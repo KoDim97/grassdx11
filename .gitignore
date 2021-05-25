@@ -6,6 +6,8 @@
 *.lo
 *.o
 *.obj
+*.iobj
+*.ipdb
 
 # Precompiled Headers
 *.gch
@@ -25,6 +27,7 @@
 *.la
 *.a
 *.lib
+*.lib.recipe
 
 # Executables
 *.exe
@@ -42,21 +45,11 @@ grassdx11/GrassDX11/.vs/GrassDX11/v16/.suo
 *.db-wal
 *.ilk
 *.cso
-grassdx11/GrassDX11/Debug/GrassDX11.vcxproj.FileListAbsolute.txt
-grassdx11/DirectXTex/Bin/Desktop_2019_Win10/Win32/Debug/DirectXTex_Desktop_2019_Win10.vcxproj.FileListAbsolute.txt
-grassdx11/DirectXTex/Bin/Desktop_2019_Win10/x64/Profile/DirectXTex_Desktop_2019_Win10.vcxproj.FileListAbsolute.txt
-grassdx11/DirectXTK/Bin/Desktop_2019_Win10/Win32/Debug/DirectXTK_Desktop_2019_Win10.vcxproj.FileListAbsolute.txt
-grassdx11/DirectXTK/Bin/Desktop_2019_Win10/x64/Release/DirectXTK_Desktop_2019_Win10.vcxproj.FileListAbsolute.txt
-grassdx11/DirectXTK/DirectXTK_Desktop_2019_Win10.vcxproj.user
-grassdx11/DXUT/Core/Bin/Desktop_2017_Win10/Win32/Debug/DXUT_2017_Win10.vcxproj.FileListAbsolute.txt
-grassdx11/DXUT/Core/Bin/Desktop_2017_Win10/x64/Profile/DXUT_2017_Win10.vcxproj.FileListAbsolute.txt
-grassdx11/DXUT/Optional/Bin/Desktop_2017_Win10/Win32/Debug/DXUTOpt_2017_Win10.vcxproj.FileListAbsolute.txt
-grassdx11/DXUT/Optional/Bin/Desktop_2017_Win10/x64/Profile/DXUTOpt_2017_Win10.vcxproj.FileListAbsolute.txt
-grassdx11/DXUT/Optional/DXUTOpt_2017_Win10.vcxproj.user
-grassdx11/Effects11/Bin/Desktop_2019_Win10/Win32/Debug/Effects11_2019_Win10.vcxproj.FileListAbsolute.txt
-grassdx11/Effects11/Bin/Desktop_2019_Win10/Win32/Profile/Effects11_2019_Win10.vcxproj.FileListAbsolute.txt
-grassdx11/Effects11/Bin/Desktop_2019_Win10/x64/Profile/Effects11_2019_Win10.vcxproj.FileListAbsolute.txt
-grassdx11/Effects11/Effects11_2019_Win10.vcxproj
-grassdx11/Effects11/Effects11_2019_Win10.vcxproj.user
-grassdx11/Effects11/Effects11_2019_Win10.vcxproj
-grassdx11/Effects11/Effects11_2019_Win10.vcxproj
+*.FileListAbsolute.txt
+*.vcxproj.user
+
+grassdx11/GrassDX11/x64/
+grassdx11/GrassDX11/Release/
+grassdx11/GrassDX11/Debug/
+grassdx11/DirectXTex/Bin/
+grassdx11/DirectXTK/Bin/
